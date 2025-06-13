@@ -14,8 +14,7 @@ class student:
 
 
     def display(self):
-        print(f"{self.ad_no:<10} {self.name:<20} {self.class_section:<10} {self.dob:<20}\
-               {self.gender:<15} {self.blood_gp:<20} {self.contact:<20} {self.address:<120}")
+        print(f"{self.ad_no:<10} {self.name:<20} {self.class_section:<10} {self.dob:<20}{self.gender:<15} {self.blood_gp:<20} {self.contact:<20} {self.address:<120}")
 
 # get number of students:
 num_students = int(input("Enter the number of students"))
