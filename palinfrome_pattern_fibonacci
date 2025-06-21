@@ -1,0 +1,66 @@
+#Write a function that checks whether an input
+#number is a palindrome or not.
+def fibonacci(n):
+    if n<=0:
+        print("enter a valid count")
+        return
+    if n==1:
+        print(f"fibonnacci series of 1 terms:")
+        print(0)
+        return
+    if n>1:
+        first, second = 0, 1
+        print(f"fibonnacci series")
+        print(first, end=" ")        
+        for i in range(1,n):
+            print(second, end=" ")
+            temp= first
+            first= second
+            second = second+temp
+            #first,second = second,first + second
+                                   
+
+            
+
+def factorial(n):
+    num =n
+    fact=1
+    if n<0:
+        print("there is no factorial for -ve numbers")
+    elif n==0 or n==1:
+        print(f"{n} factorial is 1")
+    else:
+        while(n):
+            fact=fact*n
+            n =n-1
+        print(f"{num} factorial is {fact}")
+        
+def palindrome_str(str):
+    rev_str =str[::-1]
+    if str ==  rev_str:
+        print("palindrome")
+    else:
+        print("not palindrome")
+def palindrome(num):
+    a_anum =num
+    rev =0
+    while(num):
+        rem= num % 10
+        rev =rev*10 + rem
+        num = num//10
+    if rev == a_anum:
+        print(f"The number {a_anum} is a palindrome.")
+    else:
+        print(f"The number {a_anum} is not a palindrome.")
+if __name__ == "__main__":
+    # print("Enter a number to check palindrom or not\n")
+    # n = int(input("enter the number: "))
+    # palindrome(n)
+    # str =input("enter palindrome number as string")
+    # palindrome_str(str)
+    # factorial_find =int(input("enter a number\n"))
+    # factorial(factorial_find)
+
+    count = int(input("Enter the number of terms: "))
+    fibonacci(count)
+
