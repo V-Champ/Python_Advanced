@@ -61,6 +61,6 @@ if __name__ == "__main__":
     # factorial_find =int(input("enter a number\n"))
     # factorial(factorial_find)
 
-    count = int(input("Enter the number of terms: "))
-    fibonacci(count)
+    # count = int(input("Enter the number of terms: "))
+    # fibonacci(count)
 
